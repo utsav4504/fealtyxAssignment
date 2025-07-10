@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: fealtyx-api
+    runtime: java
+    buildCommand: ./mvnw clean package
+    startCommand: java -jar target/fealtyx-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: JAVA_VERSION
+        value: 17
